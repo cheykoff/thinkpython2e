@@ -12,3 +12,12 @@ print word and its anagrams
 ideas:
 dictionary with primes for each letter and value is a list of words
 '''
+
+def read_word_list_into_list():
+	l = []
+	fin = open('anagrams-test.txt')
+	for line in fin:
+		l.append(line.strip())
+	print(l)
+
+read_word_list_into_list()
