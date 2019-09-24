@@ -1,3 +1,17 @@
+'''
+Problem:
+Input: word list (one word per line)
+Output: list of anagrams (word and all its anagrams per line)
+
+Solution approach:
+create a list of words from txt file
+map each word to a product of primes 
+	convert each letter of the alphabet into a distinct prime
+	multiple the primes (letters) of a word 
+compare the result with other words
+print all words with the same product of primes
+'''
+
 def read_word_list_into_list():
 	word_list = []
 	fin = open('anagrams-test.txt')
