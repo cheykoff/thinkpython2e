@@ -13,25 +13,15 @@ def get_nth_prime(n):
 	count = 0
 	while count <= n:
 		is_prime = True
-		#print('current primes:', primes)
 		for prime in primes:
 			if prime <= number**0.5 and is_prime:
-				#print('check prime', prime, 'for', number)
 				if number % prime == 0:
-					#print('number', number, 'can be divided by', prime, 'so it is not a prime')
 					is_prime = False
-				else:
-					#print('number', number, 'can not be divided by', prime, 'so it could be still a prime')
-					pass
 		if is_prime:
-			#print(number, 'is a prime')
 			primes.append(number)
 			count += 1
-		else:
-			#print(number, 'is no prime')
-			pass
 		number += 1
 	return primes[n]
 
-primes = get_nth_prime(1)
-print(primes)
+nth_prime = get_nth_prime(100)
+print(nth_prime)

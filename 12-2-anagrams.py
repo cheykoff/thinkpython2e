@@ -30,22 +30,21 @@ try to divide the number by all primes smaller or equal to the square root of th
 if it divides by one of them it is no prime
 if not it is a prime
 '''
+
 def get_nth_prime(n):
 	primes = []
-	i = 2
+	number = 2
 	count = 0
 	while count <= n:
-		j = 2
 		is_prime = True
-		while j < i/2+1:
-			print(i,j)
-			if i % j == 0:
-				is_prime = False	
-			j += 1
+		for prime in primes:
+			if prime <= number**0.5 and is_prime:
+				if number % prime == 0:
+					is_prime = False
 		if is_prime:
-			primes.append(i)
+			primes.append(number)
 			count += 1
-		i += 1
+		number += 1
 	return primes[n]
 
 def get_prime_mult_for_string(s):
