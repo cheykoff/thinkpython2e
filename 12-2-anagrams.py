@@ -21,9 +21,15 @@ def read_word_list_into_list():
 
 def letter_to_number(char):
 	char = char.lower()
-	number = ord(char) - 97
+	number = ord(char) - 97 # a-z maps to 0-25
 	return number
 
+'''
+how to find a prime:
+try to divide the number by all primes smaller or equal to the square root of the number
+if it divides by one of them it is no prime
+if not it is a prime
+'''
 def get_nth_prime(n):
 	primes = []
 	i = 2
@@ -31,7 +37,8 @@ def get_nth_prime(n):
 	while count <= n:
 		j = 2
 		is_prime = True
-		while j < i:
+		while j < i/2+1:
+			print(i,j)
 			if i % j == 0:
 				is_prime = False	
 			j += 1
