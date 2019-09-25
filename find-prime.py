@@ -8,26 +8,28 @@ idea: create a dictionary with all number 0..n as keys and True/False as value -
 idea: use the list of primes to only divide the number by those primes 
 '''
 def get_nth_prime(n):
-	numbers = {}
 	primes = []
-	i = 2
+	number = 2
 	count = 0
-	is_prime = True
-	while count <= n :
-		j = 2
+	while count <= n:
 		is_prime = True
-		#print('number:', i, 'divide by', j, 'residual:', i%j)
-		while j < i**0.5 and is_prime:
-			print('number:', i, 'divide by', j, 'residual:', i%j)
-			if i % j == 0:
-				is_prime = False
-			j += 1
+		print('current primes:', primes)
+		for prime in primes:
+			if prime <= number**0.5 and is_prime:
+				print('check prime', prime, 'for', number)
+				if number % prime == 0:
+					print('number', number, 'can be divided by', prime, 'so it is not a prime')
+					is_prime = False
+				else:
+					print('number', number, 'can not be divided by', prime, 'so it could be still a prime')
 		if is_prime:
-			print('number:', i, 'divide by', j, 'residual:', i%j)
-			primes.append(i)
+			print(number, 'is a prime')
+			primes.append(number)
 			count += 1
-		i += 1
+		else:
+			print(number, 'is no prime')
+		number += 1
 	return primes
 
-primes = get_nth_prime(30)
+primes = get_nth_prime(10)
 print(primes)
