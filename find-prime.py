@@ -4,8 +4,8 @@ try to divide the number by all primes smaller or equal to the square root of th
 if it divides by one of them it is no prime
 if not it is a prime
 
-idea: create a dictionary with all number 0..n as keys and True/False as value - if it is a prime or not
-idea: use the list of primes to only divide the number by those primes 
+potential idea: 
+create a dictionary with all number 0..n as keys and True/False as value - if it is a prime or not
 '''
 def get_nth_prime(n):
 	primes = []
