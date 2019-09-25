@@ -10,11 +10,18 @@ map each word to a product of primes
 	multiple the primes (letters) of a word 
 compare the result with other words
 print all words with the same product of primes
+
+ideas:
+A) create a dictionary letter to prime
+B) don't use primes. just order the letters according to the alphabet to compare
+Either way I assume that it makes sense to sort the list by prime product or alphabet to find the anagrams much faster.
+Not sure yet how to get the order of complexity before implementation
+use a suitable file to check the performance
 '''
 
 def read_word_list_into_list():
 	word_list = []
-	fin = open('anagrams-test.txt')
+	fin = open('words-a-d.txt')
 	for line in fin:
 		word_list.append(line.strip())
 	return word_list
@@ -74,3 +81,4 @@ def find_anagrams(l):
 word_list = read_word_list_into_list()	
 prime_mult_list = map_word_list_to_prime_mult(word_list)
 find_anagrams(prime_mult_list)
+print('end of program')
