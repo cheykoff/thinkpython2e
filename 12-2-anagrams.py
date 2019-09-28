@@ -73,10 +73,10 @@ def print_word_and_anagrams(anagrams):
 	print('Total number of anagrams:', count_anagrams)
 	print('The maximum number of words with the same letters is', max_anagrams)
 	print('Words with at least', min_anagrams_to_print, 'anagrams:', len(list_min_anagrams))
-	for item in list_min_anagrams:
-		print(item[0], end=': ')
-		for item2 in item[1]:
-			print(item2, end=', ')
+	for word_with_min_anagrams in list_min_anagrams:
+		print(word_with_min_anagrams[0], end=': ')
+		for anagram in word_with_min_anagrams[1]:
+			print(anagram, end=', ')
 		print('')
 
 word_list = read_file_into_list_of_words()
