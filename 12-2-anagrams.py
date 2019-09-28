@@ -17,7 +17,8 @@ def read_file_into_list_of_words():
 	word_list = []
 	fin = open('words-long.txt')
 	for line in fin:
-		word_list.append(line.strip())
+		word = line.strip()
+		word_list.append(word)
 	return word_list
 
 def sort_letters(word):
@@ -28,51 +29,45 @@ def sort_letters(word):
 	return letters
 
 def sort_letters_for_all_words(word_list):
-	word_and_sorted_letters_list = []
+	sorted_letters_and_words_list = []
 	for word in word_list:
 		sorted_letters = sort_letters(word)
-		word_and_sorted_letters_list.append((sorted_letters, word))
-	return word_and_sorted_letters_list
+		sorted_letters_and_words_list.append((sorted_letters, word))
+	return sorted_letters_and_words_list
 
-def sort_list_of_words_and_letters(word_and_sorted_letters_list):
-	sorted_list = sorted(word_and_sorted_letters_list)
-	return sorted_list
+def sort_list_of_sorted_letters_and_words(sorted_letters_and_words_list):
+	sorted_list_of_sorted_letters_and_words = sorted(sorted_letters_and_words_list)
+	return sorted_list_of_sorted_letters_and_words
 
-def find_anagrams(l):
-	i = 0
+def find_anagrams(sorted_list_of_sorted_letters_and_words):
+	int_word = 0
 	anagrams = []
-	for i in range(len(l)):
-		#print(l[i][1], end=': ')
-		j = 1
+	for int_word in range(len(sorted_list_of_sorted_letters_and_words)):
+		int_diff = 1
 		list_of_anagrams = []
-		if i + j < len(l):
-			while l[i][0] == l[i+j][0]:
-				#print(l[i+j][1], end=', ')
-				list_of_anagrams.append(l[i+j][1])
-				j += 1
-			j = -1
-			while l[i][0] == l[i+j][0]:
-				#print(l[i+j][1], end=', ')
-				list_of_anagrams.append(l[i+j][1])
-				j -= 1
-		#print('')
-		anagrams.append((l[i][1], list_of_anagrams))
+		if int_word + int_diff < len(sorted_list_of_sorted_letters_and_words):
+			while sorted_list_of_sorted_letters_and_words[int_word][0] == sorted_list_of_sorted_letters_and_words[int_word+int_diff][0]:
+				list_of_anagrams.append(sorted_list_of_sorted_letters_and_words[int_word+int_diff][1])
+				int_diff += 1
+			int_diff = -1
+			while sorted_list_of_sorted_letters_and_words[int_word][0] == sorted_list_of_sorted_letters_and_words[int_word+int_diff][0]:
+				list_of_anagrams.append(sorted_list_of_sorted_letters_and_words[int_word+int_diff][1])
+				int_diff -= 1
+		anagrams.append((sorted_list_of_sorted_letters_and_words[int_word][1], list_of_anagrams))
 	return anagrams
 
 def print_word_and_anagrams(anagrams):
 	print('word: anagrams')
 	anagrams = sorted(anagrams)
 	for word_and_anagrams in anagrams:
-		print(word_and_anagrams[0], end=': ')
-		if word_and_anagrams[1] == []:
-			print('---', end='')
-		else:
+		if word_and_anagrams[1] != []:
+			print(word_and_anagrams[0], end=': ')
 			for anagram in word_and_anagrams[1]:
 				print(anagram, end=', ')
-		print('')
+			print('')
 
 word_list = read_file_into_list_of_words()
-word_and_sorted_letters_list = sort_letters_for_all_words(word_list)
-sorted_list = sort_list_of_words_and_letters(word_and_sorted_letters_list)
-anagrams = find_anagrams(sorted_list)
+sorted_letters_and_words_list = sort_letters_for_all_words(word_list)
+sorted_list_of_sorted_letters_and_words = sort_list_of_sorted_letters_and_words(sorted_letters_and_words_list)
+anagrams = find_anagrams(sorted_list_of_sorted_letters_and_words)
 print_word_and_anagrams(anagrams)
