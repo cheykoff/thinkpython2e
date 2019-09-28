@@ -55,18 +55,29 @@ def find_anagrams(sorted_list_of_sorted_letters_and_words):
 			while sorted_list_of_sorted_letters_and_words[int_word][0] == sorted_list_of_sorted_letters_and_words[int_word+int_diff][0]:
 				list_of_anagrams.append(sorted_list_of_sorted_letters_and_words[int_word+int_diff][1])
 				int_diff -= 1
-		anagrams.append((sorted_list_of_sorted_letters_and_words[int_word][1], list_of_anagrams))
+		if list_of_anagrams != []:
+			anagrams.append((sorted_list_of_sorted_letters_and_words[int_word][1], list_of_anagrams))
 	return anagrams
 
 def print_word_and_anagrams(anagrams):
-	print('word: anagrams')
+	count_anagrams = 0
+	max_anagrams = 0
+	min_anagrams_to_print = 10
+	list_min_anagrams = []
 	anagrams = sorted(anagrams)
 	for word_and_anagrams in anagrams:
-		if word_and_anagrams[1] != []:
-			print(word_and_anagrams[0], end=': ')
-			for anagram in word_and_anagrams[1]:
-				print(anagram, end=', ')
-			print('')
+		count_anagrams += 1
+		max_anagrams = max(max_anagrams, len(word_and_anagrams[1]) + 1)
+		if len(word_and_anagrams[1]) + 1 >= min_anagrams_to_print:
+			list_min_anagrams.append((word_and_anagrams[0], word_and_anagrams[1]))
+	print('Total number of anagrams:', count_anagrams)
+	print('The maximum number of words with the same letters is', max_anagrams)
+	print('Words with at least', min_anagrams_to_print, 'anagrams:', len(list_min_anagrams))
+	for item in list_min_anagrams:
+		print(item[0], end=': ')
+		for item2 in item[1]:
+			print(item2, end=', ')
+		print('')
 
 word_list = read_file_into_list_of_words()
 sorted_letters_and_words_list = sort_letters_for_all_words(word_list)
