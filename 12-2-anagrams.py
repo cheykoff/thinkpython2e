@@ -18,7 +18,9 @@ def read_file_into_list_of_words():
 	fin = open('words-long.txt')
 	for line in fin:
 		word = line.strip()
-		word_list.append(word)
+		if word.isalpha():
+			word = word.lower()
+			word_list.append(word)
 	return word_list
 
 def sort_letters(word):
