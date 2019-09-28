@@ -1,10 +1,10 @@
+retainers
 deltas
 desalt
 lasted
 salted
 slated
-staled
-retainers
+staled	
 ternaries
 generating
 greatening
