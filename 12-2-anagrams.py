@@ -36,7 +36,7 @@ def sort_letters_for_all_words(word_list):
 		sorted_letters = sort_letters(word)
 		sorted_letters_and_words_list.append((sorted_letters, word))
 	return sorted_letters_and_words_list
-ö
+
 def sort_list_of_sorted_letters_and_words(sorted_letters_and_words_list):
 	sorted_list_of_sorted_letters_and_words = sorted(sorted_letters_and_words_list)
 	return sorted_list_of_sorted_letters_and_words
