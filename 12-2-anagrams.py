@@ -5,18 +5,13 @@ Output: list of anagrams (word and all its anagrams per line)
 
 Solution approach:
 create a list of words from txt file
-map each word to a product of primes 
-	convert each letter of the alphabet into a distinct prime
-	multiple the primes (letters) of a word 
-compare the result with other words
-print all words with the same product of primes
-
-ideas:
-A) create a dictionary letter to prime
-B) don't use primes. just order the letters according to the alphabet to compare
-Either way I assume that it makes sense to sort the list by prime product or alphabet to find the anagrams much faster.
-Not sure yet how to get the order of complexity before implementation
-use a suitable file to check the performance
+for each word sort the letters by the alphabet 
+store the word and the sorted letters in a tuple
+so all words and the sorted letters are in a list of tuples
+sort the list by the sorted letters
+compare the sorted letters of each tuple with the tuples around
+all sorted letters which are equal are anagrams
+print each word and anagrams in one line
 '''
 
 def read_word_list_into_list():
