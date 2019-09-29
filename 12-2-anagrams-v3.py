@@ -10,8 +10,9 @@ for each word
 	add it to the dictionary with the letters as a tuple in alphapetical order as key and the word as list item for the value
 print the values
 '''
+
 def read_list():
-	d = {} 
+	d = {}
 	fin = open('words-long.txt')
 	for line in fin:
 		word = line.strip()
