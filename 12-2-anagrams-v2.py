@@ -21,7 +21,7 @@ def read_list():
 		if word.isalpha():
 			word = word.lower()
 			words.append(word)
-	return words	
+	return words
 
 def sort_letters(word):
 	letters = []
