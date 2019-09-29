@@ -1,0 +1,402 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cl",
+				"clean_word"
+			],
+			[
+				"int_",
+				"int_many_anagrams"
+			],
+			[
+				"list",
+				"list_many_anagrams"
+			],
+			[
+				"max",
+				"max_anagrams"
+			],
+			[
+				"ma",
+				"max_anagrams"
+			],
+			[
+				"c",
+				"count_anagrams"
+			],
+			[
+				"word_",
+				"word_and_anagrams"
+			],
+			[
+				"sort",
+				"sorted_list"
+			],
+			[
+				"sor",
+				"sorted_list"
+			],
+			[
+				"word",
+				"word_and_sorted_letters_list"
+			],
+			[
+				"is",
+				"is_prime"
+			],
+			[
+				"prim",
+				"prime_mult_list"
+			],
+			[
+				"pr",
+				"prime_mult_list"
+			],
+			[
+				"get",
+				"get_prime_mult_for_string"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"lett",
+				"letter_to_number"
+			],
+			[
+				"le",
+				"letter_to_number"
+			],
+			[
+				"fi",
+				"find_anagrams"
+			],
+			[
+				"rea",
+				"read_word_list_into_list"
+			],
+			[
+				"read",
+				"read_words_from_file"
+			],
+			[
+				"open",
+				"open_file"
+			],
+			[
+				"l",
+				"l_rev"
+			],
+			[
+				"sp",
+				"split"
+			],
+			[
+				"stri",
+				"string5"
+			],
+			[
+				"string",
+				"string4"
+			],
+			[
+				"o",
+				"open_file"
+			],
+			[
+				"split",
+				"split_words"
+			],
+			[
+				"val",
+				"val"
+			],
+			[
+				"crea",
+				"create_dictionary"
+			],
+			[
+				"d_",
+				"d1_test"
+			],
+			[
+				"in",
+				"invert_dictionary"
+			],
+			[
+				"d1",
+				"d1_test"
+			],
+			[
+				"cr",
+				"create_dictionary"
+			],
+			[
+				"test",
+				"test_dict"
+			],
+			[
+				"eq",
+				"equal_last_three_letters"
+			],
+			[
+				"la",
+				"last_three_letters_equal"
+			],
+			[
+				"d",
+				"d"
+			],
+			[
+				"th",
+				"three_letter_homophones"
+			],
+			[
+				"key",
+				"key_value"
+			],
+			[
+				"ke",
+				"key-value"
+			],
+			[
+				"pronou",
+				"pronounciation"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"rot",
+				"rotated_words"
+			],
+			[
+				"new",
+				"new_letter"
+			],
+			[
+				"roman",
+				"roman_numeral_map"
+			],
+			[
+				"ass",
+				"assertEqual"
+			],
+			[
+				"kno",
+				"known_values"
+			],
+			[
+				"rom",
+				"roman2"
+			],
+			[
+				"to",
+				"to_roman"
+			],
+			[
+				"w",
+				"word_in_dictionary"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/snek-fs-review.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/snek-fs.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/bisect-insert.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/thinkpython2e/order-letter-of-string.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/thinkpython2e/14-word-list-anagrams.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/romantestsuite.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/yield.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/prime-stackoverflow-idea1.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/prime-stackoverflow-idea2.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/prime-stackoverflow-idea3.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/prime-stackoverflow-idea4.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/char-to-prime.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/11-6-homophone2.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/get-prime.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/thinkpython2e/anagrams-test.txt",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/12-2-anagrams.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/functions4.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/thinkpython2e/12-2-anagrams.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/12-1-letter-frequency.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/thinkpython2e/test.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/thinkpython2e/count-to-n.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/isalpha.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/words-short.txt",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/words-100.txt",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/12-hasmatch.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/short-text.txt",
+		"/C/Users/mail/AppData/Local/Temp/most_frequent.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/most_frequent.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/dict-items.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/11-get.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/11-4-has-duplicates-solution.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/from-future.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/generate-3letter-wordlist.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/unittest.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/romantest2-solution.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/romantest1.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/11-setdefault.py",
+		"/C/Users/mail/AppData/Local/Programs/Python/Python37/Scripts/11-5-rotate-pairs.py"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "12-2-anagrams.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
