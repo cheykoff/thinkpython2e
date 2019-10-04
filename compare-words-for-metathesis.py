@@ -1,12 +1,9 @@
 words = ['yest', 'stey', 'stye', 'tyes']
 
-i = 0
-for i in range(len(words)):
-	j = 0
-	for j in range(len(words)):
-		k = 0
+for i, word in enumerate(words):
+	for j, word in enumerate(words):
 		count = 0
-		for k in range(len(words[i])):
+		for k, letter in enumerate(words[i]):
 			if words[i][k] != words[j][k]:
 				count += 1
 		if count == 2:
