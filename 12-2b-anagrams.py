@@ -39,7 +39,7 @@ def print_anagrams(d):
 	for key in sorted(d, reverse=True):
 		anagram = d[key]
 		if len(anagram) > 1:
-			print(d[key], len(anagram))
+			print(len(anagram), anagram)
 			count += 1
 			max_len = max(max_len, len(anagram))
 	print('There are', count, 'anagrams')
