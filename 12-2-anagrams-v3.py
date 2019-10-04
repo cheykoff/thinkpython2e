@@ -13,13 +13,17 @@ print the values
 
 def read_list():
 	d = {}
-	fin = open('words-long.txt')
-	for line in fin:
-		word = line.strip()
-		if word.isalpha():
-			word = word.lower()
-			key = tuple(sorted(word))
-			d[key] = d.get(key,[]) + [word]
+	n_errors = 0
+	with open('words-long.txt') as fin:
+		for line in fin:
+			word = line.strip()
+			if word.isalpha():
+				word = word.lower()
+				key = tuple(sorted(word))
+				d[key] = d.get(key,[]) + [word]
+			else:
+				n_errors += 1
+	print('warning:', n_errors, 'words were not parsed since they did not exists only of letters')
 	return d
 
 def print_anagrams(d):
@@ -29,7 +33,7 @@ def print_anagrams(d):
 		if len(anagrams) > 1:
 			print(d[key])
 			count += 1
-	print(count, 'anagrams')
+	print('these are in total', count, 'anagrams')
 
 
 dictionary = read_list()
