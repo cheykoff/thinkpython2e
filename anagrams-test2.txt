@@ -1,0 +1,10 @@
+deltas
+desalt
+lasted
+salted
+retainers
+ternaries
+hello
+aaab
+aaba
+abaa
