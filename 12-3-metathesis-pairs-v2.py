@@ -27,8 +27,9 @@ def find_and_print_metathesis_pairs_from_dictionary(d_signature_anagrams):
 	for anagrams in list_of_anagrams:
 		metathesis_pairs = find_metathesis_pairs_within_anagrams(anagrams)
 		if len(metathesis_pairs):
-			count_metathesis_pairs += len(metathesis_pairs)
-			print(metathesis_pairs)
+			for item in metathesis_pairs:
+				print(item[0],item[1])
+				count_metathesis_pairs += 1
 	print(count_metathesis_pairs, 'pairs of metathesis were found') 
 
 def word_distance(word1, word2):
