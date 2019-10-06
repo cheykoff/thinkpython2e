@@ -22,13 +22,18 @@ def read_list():
 	return d
 
 def go_through_dictionary(d):
+	count_metatheses = 0
 	list_of_words = list(d.values())
 	#print(list_of_words)
 	for words in list_of_words:
-		find_metathesis(words)
-
+		metatheses = find_metathesis(words)
+		if len(metatheses):
+			count_metatheses += len(metatheses)
+			print(metatheses)
+	print(int(count_metatheses/2), 'pairs of metatheses were found') 
 
 def find_metathesis(words):
+	metatheses = []
 	for i, word in enumerate(words):
 		for j, word in enumerate(words):
 			diff_letter_count = 0
@@ -36,7 +41,8 @@ def find_metathesis(words):
 				if words[i][k] != words[j][k]:
 					diff_letter_count += 1
 			if diff_letter_count == 2:
-				print(words[i], 'and', words[j], 'are metatheses')
+				metatheses.append((words[i],words[j]))
+	return metatheses
 '''
 def print_anagrams(d):
 	for key in d:
