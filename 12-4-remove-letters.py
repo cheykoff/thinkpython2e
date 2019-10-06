@@ -18,8 +18,25 @@ start with the longest word and try to reduce it by one letter at a time
 if it works we have found the longest word (test words which are equally long)
 if not go the next word
 '''
-with open('words.txt') as file:
-	for line in file:
-		word = line.strip()
-		if len(word) == 1:
+def create_dictionary():
+	with open('words.txt') as file:
+		d = {}
+		for line in file:
+			word = line.strip()
+			if len(word) == 2:
+				print(word)
+				d[word] = None
+	return d
+
+def reduce_word(word, d):
+	for key in d:
+		print(key)
+		if word[1:3] == key:
 			print(word)
+
+word = 'zye'
+dictionary = create_dictionary()
+
+print(word)
+print(dictionary)
+reduce_word(word, dictionary)
