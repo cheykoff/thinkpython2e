@@ -29,7 +29,7 @@ def find_and_print_metathesis_pairs_from_dictionary(d_signature_anagrams):
 		if len(metathesis_pairs):
 			count_metathesis_pairs += len(metathesis_pairs)
 			print(metathesis_pairs)
-	print(int(count_metathesis_pairs), 'pairs of metathesis were found') 
+	print(count_metathesis_pairs, 'pairs of metathesis were found') 
 
 def find_metathesis_pairs_within_anagrams(anagrams):
 	metathesis_pairs = []
