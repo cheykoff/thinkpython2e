@@ -1,6 +1,6 @@
 def create_dictionary():
 	d = {}
-	with open ('words.txt') as file:
+	with open ('words-test.txt') as file:
 		for line in file:
 			word = line.strip().lower()
 			d[word] = []
@@ -51,18 +51,18 @@ def print_trail(word, d):
 		print_trail(child[0], d)
 
 d = create_dictionary()
-#print(d)
+print(d)
 
 d2 = get_children(d)
-#print(d2)
+print(d2)
 
 d3 = filter_for_parents(d2)
-#print(d3)
+print(d3)
 
 for word in d3:
 	reduce(word, d3)
 
-#print(reducible_words)
+print(reducible_words)
 
 max_length = 0
 for word in reducible_words:
