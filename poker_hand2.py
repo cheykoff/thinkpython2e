@@ -75,11 +75,8 @@ class PokerHand(Hand):  # Create sub class of hand (sub sub class of deck)
         self.rank_hist()
         sorted_ranks = sorted(self.ranks.keys())
         for j in range(len(sorted_ranks) - 4):
-            if sorted_ranks[j + 4] == sorted_ranks[j] + 4:
-                return True
-            if sorted_ranks[0] == 1 and sorted_ranks[-4] == 10:  # Straight from 10 to Ace
-                return True
-        return False
+            return (sorted_ranks[j + 4] == sorted_ranks[j] + 4
+                    or sorted_ranks[0] == 1 and sorted_ranks[-4] == 10)  # Straight from 10 to Ace
 
     def has_straight_flush(self):
         """Returns True if the hand has a straight, False otherwise."""
